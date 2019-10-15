@@ -1,7 +1,7 @@
 # Zeichenfolgen
 
 
-Klasse "String"
+###Klasse "String"
 Wenn wir in Java Zeichenketten verwenden, d.h. ein oder mehrere Worte speichern und wieder lesen, dann nutzen wir dazu 
 eine Variable vom Typ String. Genauer gesagt ein Objekt der Klasse String.
 
@@ -27,7 +27,7 @@ Java bietet auch die Möglichkeit mit veränderbaren Zeichenketten zu arbeiten:
 
 
 
-##Welche Operationen werden in Regel auf einem String angewendet?**
+##Welche Operationen werden in Regel auf einem String angewendet?
 
 **Länge eines Strings ermitteln**  
 **Prüfen ob ein String leer ist**  
@@ -99,8 +99,8 @@ papa
 
 **Aufgabe 11:** Lege zwei Strings an und prüfe ob ihr Inhalt (Zeichenkette) identisch ist
 
-**Aufgabe 12:** Teile die Zeichenkette an den Leerstellen  
-"Wunderauto"
+**Aufgabe 12:** Teile die Zeichenkette in Worte "Winter" und "auto"  
+"Winterauto"
 
 
 

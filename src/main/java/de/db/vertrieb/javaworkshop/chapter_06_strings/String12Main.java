@@ -4,10 +4,13 @@ public class String12Main {
 
     public static void main(String[] args) {
 
-        String s = "Wunderauto";
+        String s = "Winterauto";
 
-        String t = s.substring(6);
-        System.out.println(t);
+
+        String a = s.substring(0, 6);
+        String b = s.substring(6);
+        System.out.println(a);
+        System.out.println(b);
 
         String u = "Das ist ein ganz normaler Satz";
         String [] v = u.split("\\s");
