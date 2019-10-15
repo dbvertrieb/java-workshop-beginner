@@ -117,14 +117,6 @@ String welcome = "Willkommen" + "bei DB Vertrieb";
 **Aufgabe 6:**
 Programmiere das Beispiel aus Aufgabe 5 mit dem Datentyp String nach.
 
-**Aufgabe 7:**
-Spiele mit den bereitgestellten Funktionen von String. Erstelle dafür eine String-Zeichenkette. 
-Auf die Funktionen einer Variablen kannst du zugreifen in dem du ihr einen '.' hinzufügst:
-```java
-String welcome = "Willkommen bei DB Vertrieb";
-welcome.xxx();
-``` 
-
 ### Array
 * Speichern mehrere Werte eines Types in einer Liste
 
