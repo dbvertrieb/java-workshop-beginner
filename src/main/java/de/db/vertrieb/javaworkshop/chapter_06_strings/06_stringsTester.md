@@ -1,7 +1,7 @@
 # Zeichenfolgen
 
 
-Klasse "String"
+###Klasse "String"
 Wenn wir in Java Zeichenketten verwenden, d.h. ein oder mehrere Worte speichern und wieder lesen, dann nutzen wir dazu 
 eine Variable vom Typ String. Genauer gesagt ein Objekt der Klasse String.
 
@@ -27,7 +27,7 @@ Java bietet auch die Möglichkeit mit veränderbaren Zeichenketten zu arbeiten:
 
 
 
-##Welche Operationen werden in Regel auf einem String angewendet?**
+##Welche Operationen werden in Regel auf einem String angewendet?
 
 **Länge eines Strings ermitteln**  
 **Prüfen ob ein String leer ist**  
@@ -82,17 +82,26 @@ String s = null;
 s.length();
 ```
 
-**Aufgabe 6:** Erstelle ein Programm um zu ermitteln wie oft ein Teil-String vorkommt  
+**Aufgabe 6:** Erstelle ein Programm um zu ermitteln ob ein Teil-String vorkommt  
 Beispiel: "sch" in "schlingelschlangel"
 
-**Aufgabe 7:** Erstelle ein Programm, welches das Alter und die Größe in Variablen speichert diese dann in einem Satz ausgibt  
+**Aufgabe 7:** Erstelle ein Programm, welches das Alter und die Größe in Variablen speichert und diese dann in einem Satz ausgibt  
 z.B. **Alter: 38, Groesse: 180 cm**
 
 **Aufgabe 8:** Wandle alle zeichen in Großbuchstaben um  
 DasIstEinTestWort
 
 **Aufgabe 9:** Entferne die Leerzeichen aus der Zeichenkette:
-" irgendeinwort     "
+"   irgendeinwort       "
+
+**Aufgabe 10:** Ersetze jedes 'p' durch ein 'm'  
+papa
+
+**Aufgabe 11:** Lege zwei Strings an und prüfe ob ihr Inhalt (Zeichenkette) identisch ist
+
+**Aufgabe 12:** Teile die Zeichenkette in Worte "Winter" und "auto"  
+"Winterauto"
+
 
 
 ##Zeichen von der Komandozeile entgegennehmen
@@ -103,6 +112,8 @@ Klasse Scanner
     Scanner scanner = new Scanner(System.in);
     String s = scanner.next();
 ```
+
+**Aufgabe 13:** Erstelle ein Programm um eingaben von der Komandozeile entgegenzunehmen
 
 ##Zeichenketten formatiert augeben
 
@@ -120,46 +131,9 @@ Platzhalter | Beschreibung
 **%d** | Dezimalzahl
 **%t** | Datum und Zeit 
 
+**Aufgabe 14:** Erstelle ein Programm, welches das Alter und die Größe in Variablen speichert und diese dann in einem Satz ausgibt. Benutze dazu die String.format Methode.  
+z.B. **Alter: 38, Groesse: 180 cm**
 
-
-
-
-
-
-
-
-
-
-
-### Zugriff auf ein bestimmtes Zeichen mit charAt( )
-
-```java
-charAt( )
-```
-**Aufgabe:** Gib das **erste** und das **letzte** Zeichen einer Zeichenkette aus
-
-
-### Nach enthaltenen Zeichen und Zeichenfolgen suchen
-
-```java
-contains(CharSequence) 
-```
-
-**Aufgabe:** Erstelle zwei Strings. Der zweite String soll ein Teilstring des ersten sein. Suche nach dem zweiten String im ersten String
-
-
-#### Fundstelle mit indexOf(…) zurückgeben
-
-```java
-indexOf(…)
-```
-**Aufgabe:** Suche die Stelle an der ein Bestimmtes Zeichen einer Zeichenkette vorkommt
-
-#### Vom Ende an suchen
-
-```java
-lastIndexOf(…)
-```
 
 
 
