@@ -1,6 +1,6 @@
 # Funktionen
-* wiederkehrender Code soll nicht erstellt werden, sondern zentral an einer Stelle definiert werden
-* komplexer Code kann nicht mehrere Funktionen ausgelagert werden, um Komplexität zu mindern
+* redundanter Code soll nicht erstellt, sondern zentral an einer Stelle definiert werden
+* komplexer Code kann in mehrere Funktionen ausgelagert werden, um Komplexität zu mindern
 * Gute Namen für Funktionen wählen
 * Namensmuster wie bei Variablen
 
@@ -66,7 +66,7 @@ public class Main {
 1. Erstelle eine Funktion die eine Liste mit euren Namen als Parameter entgegennimmt
 und die Namen in jeweils einer neuen Zeile ausgibt.
 2. Erstelle eine Funktion die zwei Ganzzahlen als Parameter entgegennimmt,
-die Zahlen addiert und zürückgibt. Gebe das Ergebnis außerhalb der Funktion aus.
+die Zahlen addiert und die Summe zurückgibt. Gebe das Ergebnis außerhalb der Funktion aus.
 
 ## Quellen
 * http://openbook.rheinwerk-verlag.de/javainsel/02_007.html#u2.7

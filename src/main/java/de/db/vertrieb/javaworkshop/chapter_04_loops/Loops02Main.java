@@ -14,8 +14,8 @@ public class Loops02Main {
                 System.out.println( "Falsch, meine Zahl ist größer." );
             else if (number < guess)
                 System.out.println( "Falsch, meine Zahl ist kleiner." );
-        }
-        while ( number != guess );
+
+        } while ( number != guess );
 
         System.out.println( "Super getippt!" );
     }

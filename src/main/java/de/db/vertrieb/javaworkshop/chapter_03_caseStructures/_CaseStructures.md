@@ -32,7 +32,7 @@ if (age < 18) {
 ```
 
 **Aufgabe 2:**
-Programmiere den Code nach und führe ihn aus.
+Erweitere den Code aus Aufgabe 1 um die Else Bedingung.
 
 ## Mehrfachverzweigung mit Else-If-Bedingungen
 ```java
@@ -72,9 +72,13 @@ if (age < 18)
 
 ```
 
-## Leseaufgabe:
-Lese bitte folgenden Abschnitt zum Bedingungsoperator durch:
-http://openbook.rheinwerk-verlag.de/javainsel/02_005.html#u2.5.3
+## Bedingungsoperator:
+* Kann als Kurzform-Variante von If-Else verwendet werden
+```java
+int a = 10;
+int b = 5;
+int max = ( a > b ) ? a : b;
+```
 
 ## Switch-Case
 * Kann als Alternative zu Mehrfachverzweigungen mit Else-If-Bedingungen verwendet werden

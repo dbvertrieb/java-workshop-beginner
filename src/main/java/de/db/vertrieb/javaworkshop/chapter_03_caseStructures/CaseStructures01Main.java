@@ -11,9 +11,5 @@ public class CaseStructures01Main {
         if (age < 18) {
             System.out.println("Du bist noch nicht volljähring");
         }
-
-        if (age >= 18) {
-            System.out.println("Du bist volljähring. Viel spaß!");
-        }
     }
 }

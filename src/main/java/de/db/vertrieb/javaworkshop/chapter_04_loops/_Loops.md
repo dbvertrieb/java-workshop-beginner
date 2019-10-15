@@ -28,13 +28,13 @@ do {
 
 **Aufgabe 2: Zahl erraten**
 1. Lasse mit Hilfe folgender Anweisung eine Zufallszahl zwischen 1 und 10 generieren:
-```java
-int number = (int) (Math.random() * 10 + 1);
-```
+    ```java
+    int number = (int) (Math.random() * 10 + 1);
+    ```
 2. Lass den Anwender eine Zahl eingeben:
-```java
-new java.util.Scanner( System.in ).nextInt();
-```
+    ```java
+    new java.util.Scanner( System.in ).nextInt();
+    ```
 3. Gebe aus ob die eingegebe Zahl ...
     * ...der generierten Zahl entspricht
     * ...kleiner ist als die generierte Zahl
@@ -76,12 +76,12 @@ for (String animal : animalNames){
 
 **Aufgabe 4:**
 Gebe mit Hilfe einer For-Each-Schleife die Primzahlen zwischen 1 und 10.000 aus
-(siehe https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)).
+(siehe <https://de.wikibooks.org/wiki/Primzahlen:_Tabelle_der_Primzahlen_(2_-_100.000)>).
 Initialisiere vorher die Zahlen in einem Array.
 
-## Leseaufgabe: Ausbruch planen mit break und Wiedereinstieg mit continue
-Lese bitte folgenden Abschnitt durch:
-http://openbook.rheinwerk-verlag.de/javainsel/02_006.html#u2.6.5
+## break und continue in Scheifen
+* __break__ bricht das Ausführen der Schleife ab
+* __continue__ springt zur nächsten Schleifendurchführung
 
 ## Quellen
 * http://openbook.rheinwerk-verlag.de/javainsel/02_006.html#u2.6

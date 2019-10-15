@@ -9,8 +9,9 @@ public class CaseStructuresQuestion01Main {
             System.out.println("Und ich bin eine zweite Anweisung");
         }
 
-//        if (age < 18)
-//            System.out.println("Du bist noch nicht volljähring");
-//            System.out.println("Und ich bin eine zweite Anweisung");
+        /*if (age < 18)
+            System.out.println("Du bist noch nicht volljähring");
+            System.out.println("Und ich bin eine zweite Anweisung");
+         */
     }
 }
