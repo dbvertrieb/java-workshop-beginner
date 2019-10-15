@@ -92,9 +92,9 @@ z.B. **Alter: 38, Groesse: 180 cm**
 DasIstEinTestWort
 
 **Aufgabe 9:** Entferne die Leerzeichen aus der Zeichenkette:
-" irgendeinwort     "
+"   irgendeinwort       "
 
-**Aufgabe 10:** Ersetze jedes p durch ein m  
+**Aufgabe 10:** Ersetze jedes 'p' durch ein 'm'  
 papa
 
 **Aufgabe 11:** Lege zwei Strings an und prüfe ob ihr Inhalt (Zeichenkette) identisch ist
