@@ -32,6 +32,31 @@ wie `C` oder `C++` wesentlich vereinfacht. Im Gegenzug kostet der Prozess der
 automatischen Speicherbereinigung allerdings etwas an Ressourcen und somit auch
 an Performance.
 
+
+## Null und NullPointerException
+
+Die null-Referenz sagt aus, dass ein Objekt nicht initialisiert wurde. Jedoch wird im weiteren Programmcode 
+versucht, auf Methoden des nicht initialisierte Objektes zuzugreifen. Und dies führt zu der sogenannten
+`NullPointerException`.
+
+```java
+class Zug {
+
+  private Wagon wagon;
+
+  public void setType( String type ) {
+
+    wagon.setType( type );  // inline NullPointerException
+
+  }
+
+}
+```
+
+Tony Hoare erfand 1965 die null-Referenz. Heute nennt er seine Entscheidung "my billion-dollar mistake"
+da dies zu unzähligen Fehlern, Schwachstellen und Systemabstürzen geführt hat, die in den 
+letzten vierzig Jahren wahrscheinlich eine Milliarde Dollar an Schmerzen und Schäden verursacht haben.
+
 ## Konstruktoren
 
 Wenn das Schlüsselwort `new` ein Objekt erzeugt, wird der sogenannte Konstruktor 
@@ -72,6 +97,20 @@ aber immer im gesamten Objekt und in allen Blöcken.
 
 In jeder Objektmethode und jedem Konstruktor steht eine Referenz mit dem Namen 
 `this` bereit, die auf das eigene Exemplar zeigt.
+
+```java
+class Zug {
+
+  String type;
+
+  void setType( String type ) {
+
+    this.type = type;
+
+  }
+
+}
+```
 
 
 

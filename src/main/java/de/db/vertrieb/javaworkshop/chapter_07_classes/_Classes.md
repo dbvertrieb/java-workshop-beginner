@@ -27,8 +27,6 @@ Innerhalb einer Klasse können folgende Eigenschaften deklariert werden:
 * Attribute (Variablen)
 * Methoden
 * Konstruktoren
-* Klassen- sowie Exemplarinitialisierer
-* innere Klassen, innere Schnittstellen und innere Aufzählungen
 
 Klassen sind also eine Art Container für diese Eigenschaften. 
 
@@ -69,9 +67,9 @@ wird das Verhalten eines Objektes abgebildet.
 Die Main Methode der Einstiegspunkt jedes Java Programms
 
 ```java
-class Zug {
+class Main {
     
-    public static void main(String args){
+    public static void main(String args[]){
         
     }
 
@@ -92,6 +90,16 @@ class Zug {
     }
 
 }
+
+class Main {
+    
+    public static void main(String args[]){
+        Zug zug = new Zug();
+        zug.printWhatIAm();
+    }
+
+}
+
 ```
 
 #### Methoden mit Parametern und Argumenten
@@ -133,15 +141,67 @@ class Zug {
 
 ## Sichtbarkeitsmodifizierer
 
-- public
-- protected
-- privat
+Innerhalb einer Klasse sind alle Methoden und Attribute für die Methoden sichtbar. 
+Um den Zugriff von außerhalb der Klasse steuern zu können gibt es verschiedene Sichtbarkeitsmodifizierer:
 
-Geheimnisprinzip 
+- paketsichtbar (ohne Modifizierer)
+Wie der Name sagt, ist alles innerhalb eine Pakets in Java sichtbar
 
-##### Getter und Setter Methoden 
+- public (öffentlich)
+Von außen für jeden sichtbar sind. Es spielt dabei keine Rolle, ob sich der Nutzer im gleichen oder 
+in einem anderen Paket befindet.
 
+- private (privat)
+Verbietet allen von außen zugreifenden Klassen den Zugriff auf Eigenschaften
 
+- protected (geschützt)
+Hat mit dem weiterführenden Thema Vererbung zu tun, welches nicht Teil dieser Schulung ist.
 
+Diese können an Attribute, Methoden, Konstruktoren und Klassen angebracht werden.
+
+Ist zwar die Klasse public, aber eine Eigenschaft privat, kann eine fremde Klasse dennoch nicht auf 
+die Eigenschaft zurückgreifen. Und ist eine Eigenschaft public, aber die Klasse privat, 
+dann kann eine andere Klasse erst gar nicht an diese Eigenschaft herankommen.
+
+Beim modellieren von Sichtbarkeitsmodifizierern sollte immer das Geheimnisprinzip umgesetzt werden. 
+Verwendet ein Entwickler eine Klasse, sollte so wenig wie möglich über das Innenleben der Klasse 
+bekannt, weitgehend geheim und von Außen nicht sichtbar sein. Der Zugriff von Außen funktioniert einzig 
+und allein über definierte Schnittstellen. 
+
+### Getter und Setter Methoden 
+
+Ein sehr häufig verwendetes Beispiel für definierte Schnittstellen sind sogenannte Getter- und 
+Setter-Methoden. Diese werden auch Zugriffsmethoden genannt. 
+Dabei kann für jedes Attribut nach einem festen Namensschema laut JavaBeans-Konvention 
+eine Schreib- und Lesemethode deklariert werden.  
+
+```java
+public class Zug {
+
+    private String type;
+
+    public void setType(String type){
+        this.type = type;
+    }
+
+    public String getType(){
+        return this.type;
+    }
+
+}
+```
 
 ## Komplexe Datentypen
+
+Attribute können nicht nur von primitiven Datentypen (int, String, ...) sondern auch 
+komplexe Datentypen sein. Komplexe Datentypen sind eigene geschriebene Klassen,
+die als Datentyp für ein Attribut verwendet werden.
+
+```java
+public class Zug {
+    
+    private String id;
+    private Wagon[] wagon;
+
+}
+```
