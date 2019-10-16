@@ -191,6 +191,25 @@ public class Zug {
 }
 ```
 
+### Die this-Referenz
+
+In jeder Objektmethode und jedem Konstruktor steht eine Referenz mit dem Namen 
+`this` bereit, die auf das eigene Exemplar zeigt.
+
+```java
+class Zug {
+
+  String type;
+
+  void setType( String type ) {
+
+    this.type = type;
+
+  }
+
+}
+```
+
 ## Komplexe Datentypen
 
 Attribute können nicht nur von primitiven Datentypen (int, String, ...) sondern auch 

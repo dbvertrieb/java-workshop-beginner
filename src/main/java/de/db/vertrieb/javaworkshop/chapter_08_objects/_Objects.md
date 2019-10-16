@@ -91,26 +91,3 @@ Bei Objektvariablen ist das anders. Eine Objektvariable lebt ab dem Moment,
 zu dem das Objekt mit new aufgebaut wurde, und sie lebt so lange, bis der 
 Garbage-Collector das Objekt wegräumt. Sichtbar und gültig ist die Variable 
 aber immer im gesamten Objekt und in allen Blöcken. 
-
-
-### Die this-Referenz
-
-In jeder Objektmethode und jedem Konstruktor steht eine Referenz mit dem Namen 
-`this` bereit, die auf das eigene Exemplar zeigt.
-
-```java
-class Zug {
-
-  String type;
-
-  void setType( String type ) {
-
-    this.type = type;
-
-  }
-
-}
-```
-
-
-
