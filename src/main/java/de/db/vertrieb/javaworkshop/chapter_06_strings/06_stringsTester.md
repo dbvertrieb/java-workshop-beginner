@@ -5,7 +5,7 @@
 Wenn wir in Java Zeichenketten verwenden, d.h. ein oder mehrere Worte speichern und wieder lesen, dann nutzen wir dazu 
 eine Variable vom Typ String. Genauer gesagt ein Objekt der Klasse String.
 
-**Aufgabe 1: ** Was ist richtig?
+**Aufgabe 1:** Was ist richtig?
 ```java
 String s = new String("Wort");
 String s = "AnderesWort";
@@ -23,7 +23,7 @@ a = "def";
 
 Java bietet auch die Möglichkeit mit veränderbaren Zeichenketten zu arbeiten:
 
-**StringBuilder ** und **StringBuffer**
+**StringBuilder** und **StringBuffer**
 
 
 
