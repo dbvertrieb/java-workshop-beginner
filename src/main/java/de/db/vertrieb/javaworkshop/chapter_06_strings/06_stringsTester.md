@@ -1,11 +1,11 @@
 # Zeichenfolgen
 
 
-###Klasse "String"
+### Klasse "String"
 Wenn wir in Java Zeichenketten verwenden, d.h. ein oder mehrere Worte speichern und wieder lesen, dann nutzen wir dazu 
 eine Variable vom Typ String. Genauer gesagt ein Objekt der Klasse String.
 
-**Aufgabe 1:** Was ist richtig?
+** Aufgabe 1: ** Was ist richtig?
 ```java
 String s = new String("Wort");
 String s = "AnderesWort";
@@ -13,7 +13,7 @@ String s = "AnderesWort";
 
 Wenn wir einen String angelgt haben, können wir ihn nicht mehr ändern -> immutable.
 
-**Aufgabe 2:** Funktioniert das?
+** Aufgabe 2:** Funktioniert das?
 ```java
 String a = "abc";
 a = a + "xy";
@@ -23,21 +23,21 @@ a = "def";
 
 Java bietet auch die Möglichkeit mit veränderbaren Zeichenketten zu arbeiten:
 
-**StringBuilder** und **StringBuffer**
+** StringBuilder ** und **StringBuffer**
 
 
 
-##Welche Operationen werden in Regel auf einem String angewendet?
+## Welche Operationen werden in Regel auf einem String angewendet?
 
-**Länge eines Strings ermitteln**  
-**Prüfen ob ein String leer ist**  
-**Nach enthaltenen Zeichen und Zeichenfolgen suchen**  
-**Zeichenfolgen an einanderhängen**  
-**Alle Zeichen des Strings in Klein-/Großbuchgstaben umwandeln**  
-**Leerzeichen am Anfang und am Ende entfernen**  
-**Zeichen ersätzen**  
-**Strings miteinander vergleihen**  
-**Strings teilen**  
+** Länge eines Strings ermitteln**  
+** Prüfen ob ein String leer ist**  
+** Nach enthaltenen Zeichen und Zeichenfolgen suchen**  
+** Zeichenfolgen an einanderhängen**  
+** Alle Zeichen des Strings in Klein-/Großbuchgstaben umwandeln**  
+** Leerzeichen am Anfang und am Ende entfernen**  
+** Zeichen ersätzen**  
+** Strings miteinander vergleihen**  
+** Strings teilen**  
 
 ```jave
 String s;
