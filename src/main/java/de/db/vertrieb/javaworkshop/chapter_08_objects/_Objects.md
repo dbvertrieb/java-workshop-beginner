@@ -87,10 +87,14 @@ noch nicht einmal `void`.
 Wir in einer Klasse kein Konstruktor definiert, legt der Java Compiler 
 automatisch einen `default constructor` an.
 
+---
+
 > Übung:
 >
 > * Erstelle einen Konstruktor für die Klasse Waggon
 > * Lege im Konstruktor die Anzahl der vorhandenen Sitzplätze für diesen Wagon fest
+
+---
 
 ### Gültigkeitsbereich, Sichtbarkeit und Lebensdauer
 
@@ -103,8 +107,12 @@ zu dem das Objekt mit new aufgebaut wurde, und sie lebt so lange, bis der
 Garbage-Collector das Objekt wegräumt. Sichtbar und gültig ist die Variable 
 aber immer im gesamten Objekt und in allen Blöcken. 
 
+---
+
 > Zusatzübung:
 >
 > * Gebe die gesammte Anzahl der verhandenen Sitzplätze des Zuges aus
 > * Erstelle dafür eine Methode `getGesamtanzahlSitzplätze` in der Klasse Zug
 > * Tipp: die for oder die for-each Schleife ist hier euer Freund
+
+---

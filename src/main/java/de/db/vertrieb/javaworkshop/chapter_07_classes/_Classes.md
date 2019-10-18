@@ -63,6 +63,7 @@ class Zug {
 }
 ```
 
+---
 
 > Übung:
 > 
@@ -152,10 +153,14 @@ class Zug {
 }
 ```
 
+---
+
 > Übung:
 > 
 > * Erstelle eine Methode mit der du die aktuelle Sitzhöhe des Stuhl auslesen kannst
 > * Erstelle eine Methode mit der du die Sitzhöhe verändern kannst
+
+---
 
 ## Sichtbarkeitsmodifizierer
 
@@ -239,12 +244,16 @@ class Zug {
 }
 ```
 
+---
+
 > Übung:
 >
 > * Erstelle eine Klasse Zug mit dem Sichtbarkeitsmodifizierer `public`
 > * Erstelle geeignete Attribute für diese Klasse mit dem Sichtbarkeitsmodifizierer `private`
 > * Erstelle Getter- und Setter-Methoden für diese Klasse
 > * Verwende die this-Referenz bei den Getter- und Setter-Methoden
+
+---
 
 ## Komplexe Datentypen
 
@@ -261,6 +270,8 @@ public class Zug {
 }
 ```
 
+---
+
 > Übung: 
 >
 > * Erstelle neben der Klasse Zug eine weitere Klasse mit dem Namen Waggon
@@ -268,3 +279,5 @@ public class Zug {
 > * Vergebe ein Attribut, welches die Anzahl der vorhandenen Sitzplätze darstellt
 > * Erstelle ein neues Attribut als `ArrayList<>` in der Klasse Zug für die Waggons um dort mehrere Waggon speichern zu können 
 > * Erstelle eine Methode um dem Array einen Waggon hinzufügen zu können. (Tipp: `ArrayList.add(OBJEKT)`) 
+
+---
