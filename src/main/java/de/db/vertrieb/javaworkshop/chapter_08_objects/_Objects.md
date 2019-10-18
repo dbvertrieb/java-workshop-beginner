@@ -22,6 +22,13 @@ Das Schlüsselwort `new` erzeugt eine neue Instanz eines Objekts vom Typen der
 Klasse. In diesem Beispiel von der Klasse Zug. 
 Bei jeder Verwendung des Schlüsselwortes `new` wird ein Bereich 
 in der entsprechenden Größe im Arbeitsspeicher (RAM) reserviert.
+
+> Übung:
+>
+> * Erstelle eine dritte Klasse neben Zug und Waggon mit dem Namen ZugMain
+> * Erstelle dort eine Main-Methode
+> * Initialisiere in der Main-Methode ein Objekt vom Typ Zug
+> * Initialisiere in der Main-Methode drei Objekte vom Typ Waggon  
  
 ### Garbage-Collector
 
@@ -80,6 +87,10 @@ noch nicht einmal `void`.
 Wir in einer Klasse kein Konstruktor definiert, legt der Java Compiler 
 automatisch einen `default constructor` an.
 
+> Übung:
+>
+> * Erstelle einen Konstruktor für die Klasse Waggon
+> * Lege im Konstruktor die Anzahl der vorhandenen Sitzplätze für diesen Wagon fest
 
 ### Gültigkeitsbereich, Sichtbarkeit und Lebensdauer
 
@@ -91,3 +102,9 @@ Bei Objektvariablen ist das anders. Eine Objektvariable lebt ab dem Moment,
 zu dem das Objekt mit new aufgebaut wurde, und sie lebt so lange, bis der 
 Garbage-Collector das Objekt wegräumt. Sichtbar und gültig ist die Variable 
 aber immer im gesamten Objekt und in allen Blöcken. 
+
+> Zusatzübung:
+>
+> * Gebe die gesammte Anzahl der verhandenen Sitzplätze des Zuges aus
+> * Erstelle dafür eine Methode `getGesamtanzahlSitzplätze` in der Klasse Zug
+> * Tipp: die for oder die for-each Schleife ist hier euer Freund

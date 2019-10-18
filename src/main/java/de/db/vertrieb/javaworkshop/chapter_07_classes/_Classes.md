@@ -6,6 +6,10 @@ Eigenschaften und ihrem Verhalten in geeigneter Weise nachbilden.
 Man versucht dabei ein Programm so modellieren, dass unterschiedliche Objekte 
 mit einander interagieren.  
 
+## Frage
+
+> Warum schreiben wir Code?
+
 ## Klassen
 
 Eine Klasse ist der Bauplan eines Objektes in Java. Durch das herunterbrechen des 
@@ -58,6 +62,15 @@ class Zug {
     boolean speisewagen;
 }
 ```
+
+
+> Übung:
+> 
+> * Erstellt eine Klasse mit dem Namen Stuhl
+> * Erstelle ein Attribute für diese Klasse welches die Sitzhöhe definiert
+> * Erstelle weitere geeignete Attribute für diese Klasse
+
+---
 
 #### Methoden
 
@@ -139,6 +152,11 @@ class Zug {
 }
 ```
 
+> Übung:
+> 
+> * Erstelle eine Methode mit der du die aktuelle Sitzhöhe des Stuhl auslesen kannst
+> * Erstelle eine Methode mit der du die Sitzhöhe verändern kannst
+
 ## Sichtbarkeitsmodifizierer
 
 Innerhalb einer Klasse sind alle Methoden und Attribute für die Methoden sichtbar. 
@@ -166,7 +184,18 @@ dann kann eine andere Klasse erst gar nicht an diese Eigenschaft herankommen.
 Beim modellieren von Sichtbarkeitsmodifizierern sollte immer das Geheimnisprinzip umgesetzt werden. 
 Verwendet ein Entwickler eine Klasse, sollte so wenig wie möglich über das Innenleben der Klasse 
 bekannt, weitgehend geheim und von Außen nicht sichtbar sein. Der Zugriff von Außen funktioniert einzig 
-und allein über definierte Schnittstellen. 
+und allein über definierte Schnittstellen.
+
+Beispiel:
+```java
+public class Zug {
+
+    private String id;
+    public String typ = "ICE";
+    private int anzahl_wagons;
+    private boolean speisewagen;
+}
+```
 
 ### Getter und Setter Methoden 
 
@@ -210,6 +239,13 @@ class Zug {
 }
 ```
 
+> Übung:
+>
+> * Erstelle eine Klasse Zug mit dem Sichtbarkeitsmodifizierer `public`
+> * Erstelle geeignete Attribute für diese Klasse mit dem Sichtbarkeitsmodifizierer `private`
+> * Erstelle Getter- und Setter-Methoden für diese Klasse
+> * Verwende die this-Referenz bei den Getter- und Setter-Methoden
+
 ## Komplexe Datentypen
 
 Attribute können nicht nur von primitiven Datentypen (int, String, ...) sondern auch 
@@ -220,7 +256,15 @@ die als Datentyp für ein Attribut verwendet werden.
 public class Zug {
     
     private String id;
-    private Wagon[] wagon;
+    private ArrayList<Waggon> waggons = new ArrayList<Waggon>();
 
 }
 ```
+
+> Übung: 
+>
+> * Erstelle neben der Klasse Zug eine weitere Klasse mit dem Namen Waggon
+> * Vergebe geeignete Attribute für die Klasse Waggon
+> * Vergebe ein Attribut, welches die Anzahl der vorhandenen Sitzplätze darstellt
+> * Erstelle ein neues Attribut als `ArrayList<>` in der Klasse Zug für die Waggons um dort mehrere Waggon speichern zu können 
+> * Erstelle eine Methode um dem Array einen Waggon hinzufügen zu können. (Tipp: `ArrayList.add(OBJEKT)`) 
