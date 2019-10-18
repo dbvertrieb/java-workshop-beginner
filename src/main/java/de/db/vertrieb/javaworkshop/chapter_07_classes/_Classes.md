@@ -6,9 +6,10 @@ Eigenschaften und ihrem Verhalten in geeigneter Weise nachbilden.
 Man versucht dabei ein Programm so modellieren, dass unterschiedliche Objekte 
 mit einander interagieren.  
 
-## Frage
-
-> Warum schreiben wir Code?
+> *Fragen:*
+>
+> * Warum schreiben wir Code?
+> * Für wen schreiben wir Code?
 
 ## Klassen
 
