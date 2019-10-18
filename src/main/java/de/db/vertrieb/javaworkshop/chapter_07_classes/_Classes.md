@@ -1,15 +1,15 @@
 # Klassen und Objektorientierung
 
+> *Fragen:*
+>
+> * Warum schreiben wir Code?
+> * Für wen schreiben wir Code?
+
 Java ist eine objekorientierte Programmiersprache. Das Konzept der 
 Objektorientierung soll Objekte der realen Welt mit ihren
 Eigenschaften und ihrem Verhalten in geeigneter Weise nachbilden. 
 Man versucht dabei ein Programm so modellieren, dass unterschiedliche Objekte 
 mit einander interagieren.  
-
-> *Fragen:*
->
-> * Warum schreiben wir Code?
-> * Für wen schreiben wir Code?
 
 ## Klassen
 
