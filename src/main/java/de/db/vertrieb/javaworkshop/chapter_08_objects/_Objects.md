@@ -28,7 +28,8 @@ in der entsprechenden Größe im Arbeitsspeicher (RAM) reserviert.
 > * Erstelle eine dritte Klasse neben Zug und Waggon mit dem Namen ZugMain
 > * Erstelle dort eine Main-Methode
 > * Initialisiere in der Main-Methode ein Objekt vom Typ Zug
-> * Initialisiere in der Main-Methode drei Objekte vom Typ Waggon  
+> * Initialisiere in der Main-Methode drei Objekte vom Typ Waggon 
+> * Füge die drei Waggons dem Zug mit deiner selbst definierten Methode hinzu 
  
 ### Garbage-Collector
 

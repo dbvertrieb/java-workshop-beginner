@@ -127,7 +127,7 @@ class Zug {
     
     int currentSpeedInKmh;
 
-    static void accelerate(int acceleration){
+    void accelerate(int acceleration){
         currentSpeedInKmh = currentSpeedInKmh + acceleration; 
     }
 
@@ -147,7 +147,7 @@ class Zug {
 
     int speed;
 
-    static int speed(){
+    int speed(){
         return speed;
     }
 
@@ -249,6 +249,7 @@ class Zug {
 
 > Übung:
 >
+> * Erstelle eine Klasse Main mit der Main Methode
 > * Erstelle eine Klasse Zug mit dem Sichtbarkeitsmodifizierer `public`
 > * Erstelle geeignete Attribute für diese Klasse mit dem Sichtbarkeitsmodifizierer `private`
 > * Erstelle Getter- und Setter-Methoden für diese Klasse
@@ -266,6 +267,8 @@ die als Datentyp für ein Attribut verwendet werden.
 public class Zug {
     
     private String id;
+    private Waggon waggon;
+
     private ArrayList<Waggon> waggons = new ArrayList<Waggon>();
 
 }
